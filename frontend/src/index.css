@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Global defaults ---- */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F8FAFC;
+  color: #1E293B;
+  scroll-behavior: smooth;
+}
+
+/* ---- Thin custom scrollbar ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #7DA0CA;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5483B3;
+}
+
+/* ---- Reusable card styles ---- */
+.card {
+  background: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E2E8F0;
+  padding: 1.5rem;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #052659;
+  margin-bottom: 1rem;
+}
+
+/* ---- Button primitives ---- */
+.btn-primary {
+  background-color: #5483B3;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: background-color 150ms ease;
+}
+.btn-primary:hover {
+  background-color: #3d6d99;
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  border: 1px solid #5483B3;
+  color: #5483B3;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: background-color 150ms ease;
+}
+.btn-secondary:hover {
+  background-color: rgba(84, 131, 179, 0.06);
+}
+
+/* ---- Input styling ---- */
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #CBD5E1;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+.input:focus {
+  border-color: #5483B3;
+  box-shadow: 0 0 0 3px rgba(84, 131, 179, 0.15);
+}
+
+/* ---- Select styling ---- */
+.select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #CBD5E1;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background: #FFFFFF;
+  outline: none;
+}
+.select:focus {
+  border-color: #5483B3;
+}
